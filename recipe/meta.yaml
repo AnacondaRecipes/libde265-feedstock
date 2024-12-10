@@ -43,9 +43,11 @@ about:
     multithreading and includes SSE optimizations. The decoder includes all
     features of the Main profile and correctly decodes almost all conformance
     streams.
-  license: LGPL-3.0-or-later
-  license_family: LGPL
-  license_file: COPYING
+  license: LGPL-3.0-or-later AND MIT
+  license_family: Other
+  license_file:
+    - COPYING         # LGPL 3.0
+    - dec265/COPYING  # MIT for examples
   doc_url: https://github.com/strukturag/libde265/wiki/Decoder-API-Tutorial
   dev_url: https://github.com/strukturag/libde265
 
