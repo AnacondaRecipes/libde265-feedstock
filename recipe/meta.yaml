@@ -23,14 +23,14 @@ requirements:
 
 test:
   commands:
-    - test -f $PREFIX/lib/libde265${SHLIB_EXT}      # [unix]
-    - test -f $PREFIX/include/libde265/de265.h      # [unix]
-    - test -f $PREFIX/lib/pkgconfig/libde265.pc      # [unix]
-    - test -f $PREFIX/lib/cmake/libde265/libde265Config.cmake      # [unix]
-    - if not exist %LIBRARY_LIB%\de265.lib exit 1       # [win]
-    - if not exist %LIBRARY_BIN%\libde265.dll exit 1       # [win]
-    - if not exist %LIBRARY_INC%\libde265\de265.h exit 1       # [win]
-    - if not exist %LIBRARY_LIB%\cmake\libde265\libde265Config.cmake exit 1       # [win]
+    - test -f $PREFIX/lib/libde265${SHLIB_EXT}                              # [unix]
+    - test -f $PREFIX/include/libde265/de265.h                              # [unix]
+    - test -f $PREFIX/lib/pkgconfig/libde265.pc                             # [unix]
+    - test -f $PREFIX/lib/cmake/libde265/libde265Config.cmake               # [unix]
+    - if not exist %LIBRARY_LIB%\de265.lib exit 1                           # [win]
+    - if not exist %LIBRARY_BIN%\libde265.dll exit 1                        # [win]
+    - if not exist %LIBRARY_INC%\libde265\de265.h exit 1                    # [win]
+    - if not exist %LIBRARY_LIB%\cmake\libde265\libde265Config.cmake exit 1 # [win]
     - dec265 -h
 
 about:
