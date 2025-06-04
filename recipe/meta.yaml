@@ -52,5 +52,10 @@ about:
   dev_url: https://github.com/strukturag/libde265
 
 extra:
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/78379
+    reason: Dependency for pdfplumber
+  recipe-maintainers:
+    - ianaobi
   recipe-maintainers:
     - frmdstryr
