@@ -24,6 +24,7 @@ cmake ${CMAKE_ARGS} -G "Ninja" \
   -DCMAKE_PREFIX_PATH="$PREFIX" \
   -DCMAKE_SYSTEM_PREFIX_PATH="$PREFIX" \
   -DCMAKE_BUILD_TYPE="Release" \
+  -DCMAKE_SHARED_LINKER_FLAGS="-lpthread" \
   ${EXTRA_FLAGS} \
   ..
 
