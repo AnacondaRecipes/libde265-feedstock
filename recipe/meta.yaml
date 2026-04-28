@@ -1,13 +1,13 @@
 {% set name = "libde265" %}
-{% set version = "1.0.15" %}
+{% set version = "1.0.18" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/strukturag/libde265/releases/download/v{{ version }}/libde265-{{ version }}.tar.gz
-  sha256: 00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
+  url: https://github.com/strukturag/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 800478f3bf35f0621b14928ceb317579f3e8b23de4bd2aac29b6cb8be962bbd8
 
 build:
   number: 0
@@ -17,9 +17,10 @@ build:
 requirements:
   build:
     - gnuconfig  # [unix]
+    - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - cmake
-    - ninja
+    - ninja-base
 
 test:
   commands:
@@ -34,7 +35,7 @@ test:
     - dec265 -h
 
 about:
-  home: https://www.libde265.org/
+  home: https://www.libde265.org
   summary: Open h.265 video codec implementation
   description: |
     libde265 is an open source implementation of the h.265 video codec.
