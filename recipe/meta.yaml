@@ -10,7 +10,7 @@ source:
   sha256: 800478f3bf35f0621b14928ceb317579f3e8b23de4bd2aac29b6cb8be962bbd8
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('libde265', max_pin='x.x.x') }}
 
