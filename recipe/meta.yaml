@@ -1,5 +1,5 @@
 {% set name = "libde265" %}
-{% set version = "1.0.18" %}
+{% set version = "1.1.3" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/strukturag/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 800478f3bf35f0621b14928ceb317579f3e8b23de4bd2aac29b6cb8be962bbd8
+  sha256: 554228bd17788c99a7e63b37ab5634722190e6e2bf60c1dcb01cef328e133905
 
 build:
   number: 0
